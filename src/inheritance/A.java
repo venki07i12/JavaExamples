@@ -1,0 +1,30 @@
+package inheritance;
+
+class A {
+
+	int x=10, y=20;
+	void m1()
+	{
+		System.out.println("A Class sum is:" +(x+y));
+	}
+
+}
+
+
+
+class B extends A {
+
+	int p=5, q=7;
+	void m2()
+	{
+		int r = x+y+p+q;
+		System.out.println("B Class sum is:" +r);
+	}
+
+		public static void main(String[] args) {
+	
+		B b1= new B();
+		b1.m1();
+		b1.m2();
+		}
+}
